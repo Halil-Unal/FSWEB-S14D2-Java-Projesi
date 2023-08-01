@@ -10,6 +10,7 @@ public class Main {
         Bed bed =new Bed("NİCE",4,5,6,7);
         Wall wall=new Wall("UP");
         Wardrobe war=new Wardrobe(8,1,3.78);
+        int he=war.getHeight();
         Bedroom beds = new Bedroom(
                 "ali",
                 wall,
@@ -22,7 +23,9 @@ public class Main {
                 carp
         );
         System.out.println(beds);
-
+beds.getCeiling().create();
+beds.getWardrobe().add();
+beds.getCarpet().lying();
     }
 
 
